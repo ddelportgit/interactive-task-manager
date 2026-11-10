@@ -10,7 +10,8 @@ body {
 }
 
 .container {
-  margin: clamp(1rem, 4vw, 2rem) clamp(2rem, 6vw, 4rem);
+  max-width: 900px;
+  margin: 2rem auto;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -30,6 +31,11 @@ body {
   flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 4rem;
+  align-items: center;
+}
+
+.inputs label {
+  margin-right: 0.5rem;
 }
 
 .taskInput {
@@ -42,11 +48,15 @@ body {
 
 .addTaskBtn {
   padding: 0.5rem 1rem;
-
   background: none;
   border: 1px solid #3800a0;
   color: white;
   border-radius: 10px;
+}
+
+.addTaskBtn:hover {
+  background: #3800a0;
+  cursor: pointer;
 }
 
 .taskFilter {
@@ -64,7 +74,7 @@ body {
 }
 
 .taskList {
-  font-size: clamp(1rem, 4vw, 2rem);
+  font-size: c1rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -77,5 +87,20 @@ body {
 
 .task {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
+}
+
+.taskInput:focus-visible,
+.addTaskBtn:focus-visible,
+.taskFilter:focus-visible {
+  outline: 2px solid #a78bfa;
+  outline-offset: 3px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 1.5rem 1rem;
+    margin: 1rem;
+  }
 }
