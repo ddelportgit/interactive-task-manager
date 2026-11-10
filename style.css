@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  margin: 4rem 8rem;
+  margin: clamp(1rem, 4vw, 2rem) clamp(2rem, 6vw, 4rem);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,13 +20,14 @@ body {
 }
 
 .heading {
-  font-size: 3rem;
+  font-size: clamp(1.5rem, 4vw, 3rem);
   margin-bottom: 4rem;
 }
 
 .inputs {
   padding: 2rem 0;
   display: flex;
+  flex-wrap: wrap;
   gap: 0.5rem;
   margin-bottom: 4rem;
 }
@@ -36,6 +37,7 @@ body {
   background: none;
   border: 1px solid #3800a0;
   border-radius: 10px;
+  color: white;
 }
 
 .addTaskBtn {
@@ -56,12 +58,13 @@ body {
 }
 
 .taskAmount {
-  font-size: 2rem;
+  font-size: clamp(1rem, 4vw, 2rem);
+  text-align: center;
   margin-bottom: 2rem;
 }
 
 .taskList {
-  font-size: 1.5rem;
+  font-size: clamp(1rem, 4vw, 2rem);
   display: flex;
   flex-direction: column;
   gap: 1rem;
