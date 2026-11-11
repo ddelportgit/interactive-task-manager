@@ -143,7 +143,3 @@ interactive-task-manager/
 To clear all saved tasks, open your browser's developer tools → **Application** → **Local Storage**, and delete the `tasks` key. Refreshing the page will start you with an empty list.
 
 ---
-
-## License
-
-This project is open source and available for personal and educational use. Feel free to fork it and build on it!
