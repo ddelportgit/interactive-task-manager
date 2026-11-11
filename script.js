@@ -53,6 +53,7 @@ function renderTasks() {
       task.completed = checkbox.checked;
       saveTasks();
       renderTasks();
+      updateTaskCount();
     });
 
     const taskText = document.createElement("p");
