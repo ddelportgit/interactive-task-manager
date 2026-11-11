@@ -81,7 +81,7 @@ No frameworks, no build tools, no dependencies — just open it and go.
 git clone https://github.com/ddelportgit/interactive-task-manager.git
 
 # 2. Move into the project folder
-cd interactiv-task-manager
+cd interactive-task-manager
 ```
 
 Then open `index.html` in your browser. You can double-click the file, or run:
