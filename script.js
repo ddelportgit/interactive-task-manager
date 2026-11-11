@@ -44,6 +44,7 @@ function renderTasks() {
 
   filteredTasks.forEach(function (task) {
     const li = document.createElement("li");
+    li.classList.add("task");
 
     const checkbox = document.createElement("input");
     checkbox.type = "checkbox";

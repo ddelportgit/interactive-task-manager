@@ -100,7 +100,7 @@ body {
 
 .completed {
   text-decoration: line-through;
-  opacity: 0.5rem;
+  opacity: 0.5;
 }
 
 @media (max-width: 600px) {
