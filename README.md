@@ -81,7 +81,7 @@ No frameworks, no build tools, no dependencies — just open it and go.
 git clone https://github.com/ddelportgit/interactive-task-manager.git
 
 # 2. Move into the project folder
-cd task-manager
+cd interactiv-task-manager
 ```
 
 Then open `index.html` in your browser. You can double-click the file, or run:
@@ -121,7 +121,7 @@ Then visit `http://localhost:8000` in your browser.
 ## Project Structure
 
 ```
-task-manager/
+interactive-task-manager/
 ├── index.html    # Markup: input, buttons, filter, task list
 ├── style.css     # Styling, layout, and responsive rules
 └── script.js     # Task logic, rendering, filtering, localStorage
